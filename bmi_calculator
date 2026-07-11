@@ -1,0 +1,17 @@
+#BMI calculator
+
+name = input('name: ')
+h_m = float(input('your height :'))
+w_kg = float(input('our waight kg :'))
+
+bmi = w_kg / (h_m**2)
+
+print('BMI : ')
+print(bmi)
+
+if bmi < 25:
+    print(name)
+    print('is not overweight')
+else:
+    print(name)
+    print('is overwaight')
