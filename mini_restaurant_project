@@ -1,0 +1,65 @@
+# MINI_RESTAURANT_PROJECT
+
+
+menu = {
+    'Pizza': 50,
+    'Pasta': 60,
+    'Burger': 70,
+    'Salad': 80,
+    'Coffee': 100,
+}
+
+#greatings
+
+print('Welcome to Python Restaurant')
+print("Pizza: 50tk\nPasta: 60tk\nBurger: 70tk\nSalad: 80tk\nCoffee: 100tk")
+
+order_total = 0
+
+item1 = input("Enter your order = ")
+
+
+
+#first_order
+
+if item1 in menu:
+    order_total += menu[item1]
+    print('Your Item  has been added to your order')
+else:
+    print(f"Order item {item1} is not available yet !!")
+
+
+
+
+another_order = input('Do you want to add another item? Yes/No = ')
+
+
+
+#second_order
+
+if another_order == "Yes":
+    item2 = input("Enter the name of second item = ")
+    if item2 in menu:
+
+        order_total += menu[item2]
+        print("Item {item2} has been added to order")
+
+    else:
+        print('orderd item {item2} is not available')
+
+  #to_be_continue
+
+
+print(f"The total amount of item to pay is {order_total} tk")
+
+
+
+
+
+
+
+
+
+
+
+
