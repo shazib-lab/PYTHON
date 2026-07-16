@@ -1,0 +1,20 @@
+# Input() : A function that promts the user to enter data returns the entered data a string
+
+
+name = input("Enter your name : ")
+
+
+# age = input("How old are you ? :")
+
+#age = age + 1 ,,,, not added because it is a string not integer so we have to change first the typecasting age variable by float or int then will work this addition method
+
+
+age = int(input("How old are you? :"))
+
+age += 1
+
+print(f"Hello {name} !")
+print("happy birthday")
+
+print(f"You are {age} years old !")
+
