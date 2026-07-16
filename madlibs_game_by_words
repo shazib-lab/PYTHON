@@ -1,0 +1,15 @@
+# MADLIBS GAME
+# word game where you create a story
+# by filling in blanks with random words.
+
+adj_1 = input("Enter an Adjectiv (descriptions): ")
+noun_1 = input("Enter a noun (person, place, and other things): ")
+adj_2 = input("Enter an another Adjective (descriptions): ")
+verb_1 = input("Enter a verb ending with 'ing' : ")
+adj_3 = input("Enter an Adjective (description): ")
+
+
+print(f"Today I went to a {adj_1} zoo.")
+print(f"In an exhibit, I saw a {noun_1}")
+print(f"{noun_1} was {adj_2} and {verb_1}")
+print(f"I was {adj_3} !!")
