@@ -1,0 +1,38 @@
+# TYPECASTING IN PYTON: the process of converting a variable from one data type to another str(), int(), float(), bool() like that
+# Typecasting for using user input
+
+
+from turtle import st
+
+
+name = "shazib"
+age = 25
+gpa = 3.2
+is_student = True
+
+# print(type(name))
+# print(type(age))
+# print(type(gpa))
+# print(type(is_student))
+
+
+
+#----------------typecasting-----------
+gpa = int(gpa)
+age = float(age)
+
+
+#------error--------
+# age = str(age)
+# age += 1
+
+#Traceback (most recent call last):
+# age += 1
+# TypeError: can only concatenate str (not "int") to str
+
+#-------end error-----------
+
+
+
+print( gpa)
+print( age)
