@@ -1,0 +1,27 @@
+
+# Arithmetic methods
+# Using some functions
+
+
+# friends = 5
+
+# friends += 1 ,,, addition ,, friends = friends + 1
+# friends -= 2 ,,, subtraction ,,, friends = friends - 2
+# friends *= 2 ,,, multiplication ,, friends = friends *2
+# friends /= 2 ,,, division ,, friends / 2
+# friends **= 2 ,,, power ,,, friends ** 2
+# remainder = friends % 2 ,,, remainders = friends % 2
+
+
+x = 3.14
+y = 4
+z = 5
+a = -3
+
+# result = round(x) ----- round() function
+# result = abs(a) ---- absolute() funstions
+# result = pow(y, 2) ------ power() function
+# result = max(x, y, z, a) ----- maximum() function
+# result = min(x, y, z, a) -------  minimum() function
+
+print(result)
