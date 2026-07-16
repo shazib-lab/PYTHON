@@ -1,0 +1,51 @@
+# Evaluate multiple condition (or, and, not)
+
+# or = at least one condition must be true
+
+# and = both  condition must be true
+
+# not = inverts the condition (no false, not True)
+
+
+#------------ OR ---------
+
+temp = 20
+is_raining = False
+
+if temp > 25 or is_raining:
+    print("The outdoor even is cancelled")
+else:
+    print("The outdoor event is still schedule")
+
+
+#--------------- AND -----------
+
+temp = 0
+# is_sunny = True
+is_sunny = False
+
+if temp >= 28 and is_sunny:
+
+    print("It is Hot Outdoor")
+    print("It is sunny")
+
+elif temp <= 0 and is_sunny:
+
+    print("It is cold outdoor")
+    print("It is sunny")
+
+elif temp < 28 and temp > 0 and is_sunny:
+
+    print("It is worm outdoor")
+    print("It is sunny")
+
+#----------- NOT ----------
+
+elif temp >= 28 and not is_sunny:
+
+    print("It is Hot outdoor")
+    print("It is Cloudy")
+
+elif temp <= 0 and not is_sunny:
+    print("It is cold outdoor")
+    print("It is cloudy")
