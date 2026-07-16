@@ -1,0 +1,25 @@
+# Python calculator
+
+operator = input("Enter an operator (+,-,*,/) : ")
+
+num1 = float(input("Enter Your first Number: "))
+num2 = float(input("Enter Your second Number: "))
+
+if operator == "+":
+    result = num1 + num2
+    print(f"Yor addition is : {result}")
+
+elif operator == "-":
+    result = num1 - num2
+    print(f"Your subtraction is : {result}")
+
+elif operator == " * ":
+    result = num1 * num2
+    print(f"Your multiplications is : {result}")
+
+elif operator == " / ":
+    result = num1 / num2
+    print(f"Your division is : {result}")
+
+else:
+    print("You are  not enter your asign operator")
