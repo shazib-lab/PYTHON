@@ -1,0 +1,45 @@
+# If condition: Do some code only if some canodition is True Else do something.
+
+
+
+age = int(input("Enter Your age : "))
+
+if age >= 18 :
+    print("you are now signed up !")
+else:
+    print("You must be 18+ to sign up")
+
+
+#--------------------------------------------------
+
+respones = input("Would you like food? (Y/N): ")
+
+if respones == "Y":
+    print("Have some food !")
+else:
+    print("No food for You !")
+
+
+
+#---------------------------------------------------
+
+name = input("Enter your Name: ")
+
+if name == "":
+    print("You did not type your name !")
+else:
+    print(f"Welcome to Mr. {name} in our hotel!!")
+
+
+
+#-------------- boolean----------------------------
+
+
+for_sale = False
+for_sale = True
+
+if for_sale:
+    print("This item is for sale")
+else:
+    print("This item is not for sale")
+    
