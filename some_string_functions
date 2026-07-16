@@ -1,0 +1,22 @@
+# --------- some string functions ------------
+
+name =  input("enter your name : ")
+
+a = len(name)
+a = name.find("xyz")
+a = name.rfind("kpl")
+a = name.capitalize()
+a = name.upper()
+a = name.lower()
+a = name.isdigit()
+a = name.isalpha()
+
+print(name)
+
+
+#---------------- phone -----------
+
+phone_number = input("enter phn number: ")
+a = phone_number.count("2")
+a = phone_number.replace("a", "x")
+print(a)
