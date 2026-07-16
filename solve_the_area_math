@@ -1,0 +1,26 @@
+# Rectangle :  problem solve 
+# l = lentgh  w = width  A = wl
+
+
+
+
+lenth = input("Enter the lenght : ")
+width = input("Enter the width: ")
+
+area = lenth * width
+print(f"area is {area} cm")
+
+#-------error--------
+#area = lenth * width
+#TypeError: can't multiply sequence by non-int of type 'str'
+
+#-------end---------
+
+# now is the rigth way  of the solution
+
+lenth = float(input("Enter the lenght : "))
+width = float(input("Enter the width: "))
+
+
+area = lenth * width
+print(f"area is {area} cm")
