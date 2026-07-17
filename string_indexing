@@ -1,0 +1,15 @@
+# STRING INDEXING: accessing elements of a sequence using [] (indexing operators), [start : end : step]
+
+x_number = "1234-5678-9012-3456"
+
+print(x_number[0])
+print(x_number[:4])
+print(x_number[5:10])
+print(x_number[5:])
+print(x_number[-1])
+print(x_number[: : 3])
+print(x_number[-4 : ])
+
+
+last_digits = x_number[-4 : ]
+print(f"xxxx-xxx-xxxx-xxxx-{last_digits}")
