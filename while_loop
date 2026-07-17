@@ -1,0 +1,48 @@
+# WHILE LOOP: execute some code while some codition remains True.
+
+
+
+name = input("Enter You Name: ")
+
+while name == "" :
+    print("You did not enter your Name")
+    name = input("Enter Your Name: ")
+print(f"Hello Mr/Ms : {name}")
+
+
+
+
+
+age = int(input("Enter your age : "))
+
+while age < 0 :
+    print("Age can not be negative")
+    age = int(input("Enter your age : "))
+print(f"You are {age} years old")
+
+ 
+
+
+
+food = input("Enter a food (q to quit): ")
+
+while not  food == "q":
+    print(f"You like {food}")
+    food = input("Enter another food : ")
+print("buy")
+
+
+
+
+num = int(input("Enter a number 1-10: "))
+
+while num < 1  or num > 10 : 
+
+#মানে:
+# num যদি ১-এর কম অথবা
+# num যদি ১০-এর বেশি হয়,
+# তাহলে শর্ত True হবে এবং while লুপ চলবে।
+
+    print(f"{num} is not valid")
+    num = int(input("Enter a number 1-10: "))
+print(f"Your number is : {num}")
