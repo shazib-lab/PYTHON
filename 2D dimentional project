@@ -1,0 +1,26 @@
+# Basic for 2D dimension
+
+fruits = ['apple', 'orange', 'banana', 'coconut']
+vegetable = ['cerry', 'carrote', 'potatoes', 'leaf']
+meats = ['chekiken', 'fish', 'hen', 'cow']
+
+grocerise = [
+    fruits,      #---- fruits is the first row 
+    vegetable,   #---- vegetable is the second row 
+    meats        #---- meats is the third row 
+    ]      
+
+print(grocerise)
+print(grocerise[0,1,2]) # this is not right way
+print(grocerise[0])
+print(grocerise[0][1]) # [0] = fruits and [1] = fruits list er first item
+
+#-------- basic end ---------------------
+
+
+for c in grocerise:
+#     print(c)
+    for food in c:
+        print(food, end=" ")
+        print()
+
