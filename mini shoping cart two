@@ -1,0 +1,56 @@
+
+shopping = []
+s_prices = [] 
+s_total = 0
+
+foods = []
+prices = []
+total = 0 
+
+
+while True:
+    food = input("Enter a food to buy (q t quit): ")
+    
+    if food.lower() == "q":
+        break
+    else:
+        price = float(input("Enter price TK: "))   
+        foods.append(food)
+        prices.append(price)
+
+while True:
+    print("Welcome to our Dress show room !! ")
+    print()
+    cloth = input("Enter your dress: ")
+    if cloth.lower() == "q":
+        break
+    else:
+        price = float(input("Enter your cloth prize: "))
+        shopping.append(cloth)
+        s_prices.append(price)
+
+
+print(" -------------- Your Cart for Food -------------- ")
+
+for i in foods:
+    print(i, end=" " )
+
+for i in prices:
+    total += i
+    print()
+
+print("--------------------- Your Cart for Cloth")
+
+for i in shopping:
+    print(i, end=" ")
+
+for i in s_prices:
+    s_total += i
+    print()
+
+all_total = total + s_total
+
+print(f"Your cloth total is : {s_total} tk ")
+print(f"Your food total is : {total} tk ")
+print()
+print(f"Your total is : {all_total} tk ")
