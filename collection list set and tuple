@@ -1,0 +1,70 @@
+# Collection : single "variable" used to stor multiple values.
+
+# List = []  orderd and changeable. Duplicate allowed.
+# Set = {}  Unordered and immutable, but add/remove ok . No duplicate .
+# Tuple = () orderd and unchangeable. Duplicate ok. Faster
+
+
+#------------- List ------------
+
+fruits = ["apple", "banana", "orange", "coconut"]
+
+
+print(dir(fruits))
+print(help(fruits))
+print(fruits[ : : 1]) 
+
+for i in fruits:
+    print(i)
+
+print("apple" in fruits)  # boolean
+fruits[0] = "mango" # changing the item by indexing
+fruits.append("pineaple")
+fruits.remove("apple")
+fruits.insert(0, "flower")
+fruits.sort()
+fruits.reverse()
+fruits.clear()
+print(len(fruits))
+print(fruits.count("apple"))
+print(fruits.index("orange"))
+
+
+
+
+#-------------------- SET --------------------
+
+fruits = {"apple", "banana", "orange", "coconut"}
+
+print(dir(fruits))
+print(help(fruits))
+print(len(fruits))
+
+for i in fruits:
+    print(i)
+
+print("apple" in fruits)  # boolean
+
+fruits.add("x")
+fruits.remove("x")
+fruits.pop()
+fruits.clear()
+print(fruits)
+
+
+
+#--------------- TUPLE ----------------------
+
+fruits = ("apple", "banana", "orange", "coconut")
+
+print(dir(fruits))
+print(help(fruits))
+print(len(fruits))
+
+for i in fruits:
+    print(i)
+
+print("apple" in fruits)  # boolean
+print(fruits.count("apple"))
+
+
