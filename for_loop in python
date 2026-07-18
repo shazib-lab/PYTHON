@@ -1,0 +1,28 @@
+# For Loop : execute a block of code a fixed number of times you can iterate over a range, str, sequence, etc .
+
+
+
+for i in range(1, 11):
+    print(i)
+
+
+
+for i in reversed(range(1, 11)):
+    print(i)
+
+
+
+# range(x, y, z)  # x = start point,  # y = ending point, # z = steping piont
+
+for i in range(0, 11, 2): 
+    print(i)
+
+
+
+
+for i in range(1, 21):
+    if i == 13 :     # do the skip that value continue, on the other hand if I used to breack function then it stop here means 13 is the last value.
+        # break  
+         continue
+    else:
+        print(i)
