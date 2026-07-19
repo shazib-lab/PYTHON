@@ -1,0 +1,19 @@
+#  A block of reusable code place() after the function nul to invoke it.
+
+# name, age is the perameter of this function.
+def happy_birthday(name, age): 
+    print(f"Happy Birthday {name}")
+    print(f"You are {age} years old")
+
+
+happy_birthday('shazib', 25) 
+      
+
+def display_invoice(username, amount, due_date):
+    print(f"Hello {username}")
+    print(f"Your bill of {amount:.2f} tk is due: {due_date}")
+
+invoice = display_invoice('shakib', 200, "01/05")
+print(invoice)
+
+    
