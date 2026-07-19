@@ -1,0 +1,30 @@
+# Return Statement : used to end a function and send a result back to the caller.
+
+def add(a, b):
+    c = a + b
+    return c
+print(add(4,5))
+
+
+def substruc(a, b):
+    c = a + b
+    return c
+
+name = substruc(1,2)
+print(name)
+
+
+def multiply(a, b):
+    c = a * b
+    return c
+print(multiply(5,6))
+
+
+# do not understand that code  where is the mistake by me....
+# def create_name(first, last):
+#     # first = first.capitalize()
+#     # last = last.capitalize()
+#     return first+ " " +last
+
+# full_name = create_name("MD", "shazib")
+# print(full_name)
