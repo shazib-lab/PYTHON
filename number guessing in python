@@ -1,0 +1,37 @@
+# Number guessing
+import random
+
+
+lowest_num = 1
+highest_unm = 100
+
+answer = random.randint(lowest_num, highest_unm)
+# print(answer)
+guesses = 0
+# is_running = True
+
+print("Python Number Guessing Game")
+print(f"Select a number between {lowest_num} and {highest_unm}")
+
+while True:
+    guess = input("Enter your number (1 to 100): ")
+    if guess.isdigit():
+        if guess.isdigit():
+            guess = int(guess)
+            guesses += 1
+
+            if guess < lowest_num or guess > highest_unm :
+                print("The number is out of range")
+                print(f"You have to enter your number is {lowest_num} to {highest_unm}")
+            elif guess < answer:
+                print("Too low ! try again")
+            elif guess > answer:
+                print("Too high ! try again")
+            else:
+                print(f"correct ! the answe was {answer}")
+                print(f"Number of guesses : {guesses}")
+    
+    else:
+        print("Invalid guess")
+        print(f"Select a number between {lowest_num} and {highest_unm}")
+        False
