@@ -1,0 +1,43 @@
+# Dictionary : a collection of {key:vlaue} paires.
+#              orderd and changeable and no duplicate
+
+
+capitals = {
+    "usa": "dc",
+    "bd": "dhaka ",
+    "nepal": "katmandu",
+    "pakistha": "lahor",
+}
+
+print(dir(capitals))
+print(help(capitals))
+print(capitals.get("bd"))
+print(capitals.get("japan"))
+
+if capitals.get("japan"):
+    print("That capital exists")
+else:
+    print("no exists")
+
+capitals.update({"germany":"berlin"})
+capitals.update({'usa': 'detriot'})
+capitals.pop("usa")
+capitals.popitem()  # last item will be delete
+capitals.clear() # all item will be delete 
+key = capitals.keys()  # all keyes name will show
+
+for key in capitals.keys():
+    print(key)
+
+values = capitals.values()
+print(values)
+
+for value in capitals.values():
+    print(value)
+
+items = capitals.items()  # items() always work {key:value}
+print(items)
+
+for key, value in capitals.items():
+    print(f"{key} : {value}")
+
