@@ -1,0 +1,24 @@
+import time 
+
+
+def count(start, end):
+    for i in range(start, end):
+        print(i)
+
+        time.sleep(1)
+    print("Done !! ")
+
+count(0, 10)
+
+
+
+
+def counts(end, start=0):
+    for i in range(start, end+1):
+        print(i)
+        time.sleep(1)
+    print("Done !! ")
+
+counts(10)
+counts(30, 15)
+ 
