@@ -36,6 +36,20 @@ for fruit in fruits:
     print(fruit)
 
 
+#------------------- dictionary ---------------
+
+dic_x = {"a":1, "b":2, "c":3, "d":4}
+
+for key in dic_x:
+    print(key)
+
+for value in dic_x.values():
+    print(value)
+
+for key, value in dic_x.items():
+    print(f"{key}---{value}")
+
+
 
 # for fruit in reverse(fruits):
 #     print(fruit)
