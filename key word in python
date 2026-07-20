@@ -1,0 +1,27 @@
+# Key Word Argument: An argument predency by an identifier helps with reability order of arguments does not ....
+# 1. Positional  2. Default  3. Keyword  4. Arbitrary
+
+
+
+def hello(gretings, title, first_name, last_name):  # function perameters(gretings, title, first_name, last_name)
+
+    print(f"{gretings} {title} {first_name} {last_name}")
+
+hello("Hello", "Mr.", "Shazib0", "Sheikh")
+
+
+#------------------------------------------
+
+for i in range(1, 11):
+    # print(i)
+    # print(i, end=" ")
+    print(i, end="_")
+
+
+#----------------------------------------------
+def get_phone(country, area, first, last):
+    return f"{country}--{area}---{first}--{last}"
+
+phone= get_phone("bangldesh", "dhaka", "1233454", "098765")
+
+print(phone)
