@@ -1,0 +1,59 @@
+#  *args :-- Allowos you to pass multiple non-key arguments.
+#  **kwargs :-- Allows you to pass multiple keyword-arguments.
+#  unpaking operators.
+
+
+#----------------------------------
+def add(a, b):
+    return a+b
+
+# x = add(2, 3)
+# print(x)
+
+print(add(3, 2))
+
+
+#--------------- *args -------------------
+
+def adds( *args ):
+    total = 0
+    for i in args:
+        total += i
+    return total
+
+print(adds(1, 2, 3))
+
+
+
+#------------------- *args --------------------
+
+def display_name(*args):
+    for arg in args:
+        print(arg, end=" ")
+
+display_name("md", "shazib", "sheikh")
+
+
+
+#------------------ **kwargs -----------
+
+def print_address(**kwargs):
+
+    print(type(**kwargs))
+
+    for value in kwargs.values():
+        print(value)
+
+    for key in kwargs.keys():
+        print(key)
+
+    for key, value in kwargs.items():
+        print(key,  value)
+        print(f"{key}--{value}")
+
+print_address(country = "Bangladesh",
+              city = "dhaka",
+              state = "khulna",
+              post = "jessor")
+
+#---------------------------------------------
