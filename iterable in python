@@ -1,0 +1,41 @@
+# Iterable : An object / collection that can return its elements one out a time allowing. it to be iterated over in a loop.
+# List are iterable.  # Tuple also iterable  #  Set also iterable but not recersable in set
+
+
+
+num = [1,2,3,4,5]
+for i in num:
+    # print(i)
+    print(i, end="-")
+
+
+#------------ Tuple -------------
+num = ('1', '2', '3', '4', '5', 'bangladesh')
+
+for i in num:
+    
+    print(i)
+
+
+#-------------- Set ------------
+
+
+num = {'x', 'y', 1, 'pollo'}
+
+for i in num:
+    print(i)
+
+
+
+
+from django.urls import reverse
+
+
+fruits = {"apple", "orange", "banana"}
+for fruit in fruits:
+    print(fruit)
+
+
+
+# for fruit in reverse(fruits):
+#     print(fruit)
