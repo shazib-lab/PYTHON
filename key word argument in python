@@ -1,0 +1,31 @@
+
+
+
+def shiping_label(*args, **kwargs):
+    for arg in args:
+        print(arg, end=" ")
+
+    for value in kwargs.values():
+        print(value, end=" ")
+        print(f"{kwargs.get("country")}")
+        print(f"{kwargs.get("city")}, {kwargs.get("zip")}")
+     
+
+
+
+
+
+
+shiping_label("Dr.", "Md", "Shazib", "111",
+              
+              country = "Bangladesh",
+              city = "Dhaka",
+              zip = "9230"
+
+              )
+
+
+# if "Dhaka" in kwargs:
+#           print(f"{kwargs.get('Dhaka')}")
+# else:
+#     print(f"{kwargs.get(')})
