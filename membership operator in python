@@ -1,0 +1,51 @@
+# Membership operator: used to test whether a value or variable is found in a sequence(str, list, tuple, set, or dictionary)
+# 1. in  or 2. not in
+
+
+word = "apple"
+
+letter = input("Gues a letter in the sectreat word : ")
+
+if letter in word :
+    print(f"There is a {letter}")
+else:
+    print(f"{letter} was not found")
+
+
+
+if letter not in word:
+    print(f"{letter} was not found")
+else:
+    print(f"There is a {letter}")
+
+
+#------------------- set --------------
+students = {'shazib', 'Rakib','Anik'}
+
+student = input("Enter the name of student: ")
+
+if student in students:
+    print(f"{student} is a student")
+else:
+    print(f"{student} was not found")
+
+#--------------- dictionary --------------------
+
+grades = {'shazib':'A', 'Anik':'B', 'Rakib':'C'}
+
+student = input("Enter the name of student: ")
+
+if student in grades:
+    print(f"{student}'s grade is {grades[student]}")
+else: 
+    print(f"{student} was not found")
+
+
+#---------------------------- that process shorter more ------------
+
+email = 'shazibsheikh@gmail.com'
+
+if '@' in email and '.' in email:
+    print('Valid email')
+else:
+    print("Invalid email")
